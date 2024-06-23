@@ -141,12 +141,13 @@ class BooruToWD:
                                 source += f"{txt} "
             except:
                 print("Failed to fetch danbooru tags.")
-                return "Could not load danbooru tags from the URL"
+                raise RuntimeError("Bad URL, missing post or request refused(cloudflare wall?)")
         else:
             source = booru_tags
 
         if not source:
-            return ("MISSING INPUT",)
+            print("Warning: booru_tag is empty")
+            return ("",)
 
         source = source.strip()
 
