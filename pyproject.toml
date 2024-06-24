@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-boorutowd"
+description = "Converts booru tags to a format suitable for Waifu Diffusion(or Danbooru based models)."
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/RedRayz/ComfyUI-BooruToWd"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-BooruToWd"
+Icon = ""
